@@ -1,0 +1,39 @@
+.task-list {
+  width: 40%;
+  height: 100vh;
+  background-color: rgb(197, 247, 230);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.task-list header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tasks {
+  overflow: auto;
+  height: calc(100vh - 90px);
+}
+
+.task {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.task-list__input {
+  background: none;
+  border-radius: 10px;
+  border: 2px solid rgb(171, 233, 212);
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 42px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.task-list__input:focus {
+  outline: none;
+  border: 3px solid rgb(171, 233, 212);
+}
